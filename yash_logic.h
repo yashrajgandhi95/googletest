@@ -8,7 +8,7 @@ int logic(int fifo_full_flag, uint8_t data[])
     volatile int command_count = 0;
     if(fifo_full_flag == 1)
     {
-        command_count = data_processor(data[]);
+        command_count = data_processor(data);
     }
     return command_count;
 }
